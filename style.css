@@ -39,46 +39,44 @@ nav ul {
 nav a {
   text-decoration: none;
   font-weight: bold;
-  color: #ffc700;
+  color: #ff0033;
   text-transform: lowercase;
   font-size: 1rem;
 }
 
 .hero {
   position: relative;
-  height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1601758123927-1964fdf0a0e4?fit=crop&w=1650&q=80');
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
+  background: #0b0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.hero-overlay {
-  position: absolute;
-  bottom: 80px;
-  left: 40px;
-  color: white;
-}
-
-.hero-overlay h1 {
-  font-size: 4rem;
+.artist-card {
+  width: 200px;
+  height: 200px;
+  background-color: #1a0000;
+  border: 2px solid #ff0033;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
   color: white;
+  transform: rotate(-5deg);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.hero-overlay p {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-.cta {
-  background-color: #ffc700;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
+.artist-card:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 0 20px #ff0033;
+  z-index: 5;
 }
 
 footer {
