@@ -47,16 +47,29 @@ nav a {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1601758123927-1964fdf0a0e4?fit=crop&w=1650&q=80');
-  background-size: cover;
-  background-position: center;
+  background: #0b0b0b;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery {
+  display: flex;
+  height: 100%;
 }
 
 .hero-overlay {
-  position: absolute;
-  bottom: 80px;
-  left: 40px;
-  color: white;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 40px;
+  background-image: url('https://images.unsplash.com/photo-1601758123927-1964fdf0a0e4?fit=crop&w=1650&q=80');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-overlay h1 {
