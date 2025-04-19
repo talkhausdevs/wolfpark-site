@@ -75,6 +75,73 @@ nav a {
   margin-top: 15px;
 }
 
+.quote-banner {
+  padding: 40px 20px;
+  background-color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #ff0033;
+  animation: fadeUp 1.5s ease-out forwards;
+}
+
+.now-playing {
+  padding: 60px 40px;
+  background-color: #111;
+  text-align: center;
+}
+
+.now-playing h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: #ff0033;
+  margin-bottom: 30px;
+}
+
+.track-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.track {
+  background-color: #1a0000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 0, 51, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 180px;
+}
+
+.track:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 51, 0.6);
+}
+
+.track img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.track p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.cta {
+  background-color: #ff0033;
+  padding: 8px 16px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
 footer {
   text-align: center;
   padding: 20px;

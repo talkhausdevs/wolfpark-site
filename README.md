@@ -5,9 +5,11 @@ This is the official landing page for Wolfpark Recordings, powered by HAUS.
 
 ## Features
 - Hero banner: Welcome to Wolfpark Recordings
+- Animated Quote Banner: “We don’t follow waves. We run with the wild ones.”
+- Now Playing section: includes album art, artist, stream button, and hover effects
 - Full Founders section
-- OG layout: clean, minimal, dramatic
 - Bold red Wolfpark branding
+- Smooth fade animations
 
 ## To Deploy
 1. Upload `index.html` and `style.css` to your GitHub repo
