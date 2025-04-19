@@ -5,8 +5,9 @@ This is the official landing page for Wolfpark Recordings, powered by HAUS.
 
 ## Features
 - Vinyl-stacked artist cards
-- Bold red Wolfpark branding (no yellow)
+- Bold red Wolfpark branding
 - Responsive layout with hover effects
+- CTA button for music streaming
 
 ## To Deploy
 1. Upload index.html and style.css to your GitHub repo

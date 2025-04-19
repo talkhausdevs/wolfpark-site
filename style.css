@@ -56,6 +56,14 @@ nav a {
   gap: 40px;
 }
 
+.hero-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
 .artist-card {
   width: 200px;
   height: 200px;
