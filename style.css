@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&family=Playfair+Display:ital@1&display=swap');
 
 * {
   margin: 0;
@@ -13,6 +13,7 @@ body {
   color: white;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -44,24 +45,35 @@ nav a {
   font-size: 1rem;
 }
 
+/* Hero */
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1601758123927-1964fdf0a0e4?fit=crop&w=1650&q=80');
+  background-image: url('https://images.unsplash.com/photo-1603052875450-0c8b28c30acb?fit=crop&w=1650&q=80');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(26, 0, 0, 0.85));
+  z-index: 1;
 }
 
 .hero-overlay {
+  position: relative;
+  z-index: 2;
   color: white;
-  max-width: 90%;
+  text-align: center;
+  max-width: 80%;
+  animation: fadeUp 1.5s ease-out forwards;
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeUp 1.5s ease-out forwards;
 }
 
 .hero-overlay h1 {
@@ -75,20 +87,25 @@ nav a {
   margin-top: 15px;
 }
 
+/* Quote Banner */
 .quote-banner {
-  padding: 40px 20px;
-  background-color: black;
+  padding: 60px 20px;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-weight: bold;
+  background: rgba(20, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
   color: #ff0033;
-  animation: fadeUp 1.5s ease-out forwards;
+  border-top: 2px solid #ff0033;
+  border-bottom: 2px solid #ff0033;
+  animation: fadeUp 2s ease-out forwards;
 }
 
+/* Now Playing */
 .now-playing {
   padding: 60px 40px;
-  background-color: #111;
+  background: #111;
   text-align: center;
 }
 
@@ -107,23 +124,24 @@ nav a {
 }
 
 .track {
-  background-color: #1a0000;
+  background: #1a0000;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 0, 51, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 0, 51, 0.3);
+  transition: all 0.3s ease;
   width: 180px;
+  text-align: center;
 }
 
 .track:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 0, 51, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 0, 51, 0.6);
 }
 
 .track img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 12px;
+  margin-bottom: 12px;
 }
 
 .track p {
@@ -142,6 +160,46 @@ nav a {
   font-size: 0.9rem;
 }
 
+/* Founders Section */
+.founders {
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #1a0000, #2c0000);
+  border-top: 2px solid #ff0033;
+  text-align: center;
+}
+
+.founders h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ff0033;
+}
+
+.founders ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.founders li {
+  font-size: 1rem;
+  background-color: #1a0000;
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 0 15px rgba(255, 0, 51, 0.25);
+  transition: all 0.3s ease;
+}
+
+.founders li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 0, 51, 0.4);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -150,35 +208,7 @@ footer {
   font-size: 0.8rem;
 }
 
-.founders {
-  padding: 60px 40px;
-  background: linear-gradient(135deg, #1a0000, #400000, #800000);
-  box-shadow: 0 0 20px rgba(255, 0, 51, 0.3);
-  border-top: 2px solid #ff0033;
-  animation: fadeUp 2s ease-out 0.5s forwards;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.founders h2 {
-  font-family: 'Anton', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #ff0033;
-}
-
-.founders ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.founders li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  border-left: 3px solid #ff0033;
-  padding-left: 15px;
-}
-
+/* Animations */
 @keyframes fadeUp {
   to {
     opacity: 1;
