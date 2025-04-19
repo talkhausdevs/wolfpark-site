@@ -46,45 +46,28 @@ nav a {
 
 .hero {
   position: relative;
-  min-height: 100vh;
-  background: #0b0b0b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  flex-wrap: wrap;
-  gap: 40px;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1601758123927-1964fdf0a0e4?fit=crop&w=1650&q=80');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-overlay {
   position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.artist-card {
-  width: 200px;
-  height: 200px;
-  background-color: #1a0000;
-  border: 2px solid #ff0033;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Anton', sans-serif;
-  font-size: 1.2rem;
+  bottom: 80px;
+  left: 40px;
   color: white;
-  transform: rotate(-5deg);
-  transition: all 0.3s ease;
-  cursor: pointer;
 }
 
-.artist-card:hover {
-  transform: rotate(0deg) scale(1.1);
-  box-shadow: 0 0 20px #ff0033;
-  z-index: 5;
+.hero-overlay h1 {
+  font-size: 4rem;
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
 .cta {
