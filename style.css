@@ -59,6 +59,9 @@ nav a {
 .hero-overlay {
   color: white;
   max-width: 90%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.5s ease-out forwards;
 }
 
 .hero-overlay h1 {
@@ -85,6 +88,9 @@ footer {
   background: linear-gradient(135deg, #1a0000, #400000, #800000);
   box-shadow: 0 0 20px rgba(255, 0, 51, 0.3);
   border-top: 2px solid #ff0033;
+  animation: fadeUp 2s ease-out 0.5s forwards;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .founders h2 {
@@ -104,4 +110,11 @@ footer {
   margin-bottom: 10px;
   border-left: 3px solid #ff0033;
   padding-left: 15px;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
