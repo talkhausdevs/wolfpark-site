@@ -50,13 +50,15 @@ nav a {
   background-image: url('https://images.unsplash.com/photo-1601758123927-1964fdf0a0e4?fit=crop&w=1650&q=80');
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-overlay {
-  position: absolute;
-  bottom: 80px;
-  left: 40px;
   color: white;
+  max-width: 90%;
 }
 
 .hero-overlay h1 {
@@ -66,8 +68,8 @@ nav a {
 }
 
 .hero-overlay p {
-  font-size: 1rem;
-  margin: 10px 0;
+  font-size: 1.2rem;
+  margin-top: 15px;
 }
 
 footer {
@@ -80,13 +82,16 @@ footer {
 
 .founders {
   padding: 60px 40px;
-  background-color: #0b0b0b;
+  background: linear-gradient(135deg, #1a0000, #400000, #800000);
+  box-shadow: 0 0 20px rgba(255, 0, 51, 0.3);
+  border-top: 2px solid #ff0033;
 }
 
 .founders h2 {
   font-family: 'Anton', sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #ff0033;
 }
 
 .founders ul {
@@ -97,4 +102,6 @@ footer {
 .founders li {
   font-size: 1.1rem;
   margin-bottom: 10px;
+  border-left: 3px solid #ff0033;
+  padding-left: 15px;
 }
