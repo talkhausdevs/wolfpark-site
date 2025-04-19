@@ -4,11 +4,10 @@
 This is the official landing page for Wolfpark Recordings, powered by HAUS.
 
 ## Features
-- Hero gallery of all signed artists
-- Horizontal scroll with snap-to-view layout
+- Hero banner: Welcome to Wolfpark Recordings
+- Full Founders section
+- OG layout: clean, minimal, dramatic
 - Bold red Wolfpark branding
-- Responsive layout with hover CTA
-- Clean one-page structure
 
 ## To Deploy
 1. Upload `index.html` and `style.css` to your GitHub repo
