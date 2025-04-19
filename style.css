@@ -79,6 +79,17 @@ nav a {
   z-index: 5;
 }
 
+.cta {
+  background-color: #ff0033;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
 footer {
   text-align: center;
   padding: 20px;
